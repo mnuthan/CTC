@@ -12,17 +12,18 @@
     </div>
   <% end %>
     
-<div id="forms">  
+<div id="forms" class="shadow">  
+	 
  <table id="tablealign" cellpadding="5" cellspacing="5">
  	<tr>
- 		<th colspan="2">New User...</th>
+ 		<th colspan="2" class="blur">New User...</th>
  	</tr>
  	<tr>
  		<td >
  	<%= f.label :username%>		
  		</td>
  		<td>
- 	<%= f.text_field :username %>		
+ 	<%= f.text_field :username,:class=>"curved" %>		
  		</td>
  	</tr>
  	<tr>
@@ -30,7 +31,7 @@
    <%= f.label :useremail,"Email"%>			
  		</td>
  		<td>
- 	<%= f.text_field :useremail %>		
+ 	<%= f.text_field :useremail,:class=>"curved" %>		
  		</td>
  	</tr>
  	<tr>
@@ -38,7 +39,7 @@
    <%= f.label :userpassword, "Password"%>			
  		</td>
  		<td>
- 	<%= f.password_field :userpassword  %>		
+ 	<%= f.password_field :userpassword,:class=>"curved"  %>		
  		</td>
  	</tr>
  	<tr>
@@ -46,12 +47,12 @@
     <%= f.label :mobileno, "Mobile-No"%> 			
  		</td>
  		<td>
- 			<%= f.password_field :mobileno %>
+ 			<%= f.password_field :mobileno,:class=>"curved" %>
  		</td>
  	</tr>
  	<tr>
  		<td colspan="2" align="center">
- 	<%= f.submit "Register" %>		
+ 	<%= f.submit "Register",:class=>"curvedbtn" %>		
  		</td>
  	</tr>
  </table>    
